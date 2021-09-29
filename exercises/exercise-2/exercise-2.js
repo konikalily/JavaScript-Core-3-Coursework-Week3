@@ -70,3 +70,17 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+//task-1
+hogwarts.map((person) => {
+  let { firstName, lastName, house } = person;
+  if (house.includes("Gryffindor")) {
+    console.log(`${firstName} ${lastName}`);
+  }
+});
+//task-2
+hogwarts.map((teacher) => {
+  let { firstName, lastName, pet, occupation } = teacher;
+  if (occupation.includes("Teacher") && pet !== null) {
+    console.log(`${firstName} ${lastName}`);
+  }
+});
